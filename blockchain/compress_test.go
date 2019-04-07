@@ -168,13 +168,7 @@ func TestScriptCompression(t *testing.T) {
 			uncompressed:  hexToBytes("4104192d74d0cb94344c9569c2e77901573d8d7903c3ebec3a957724895dca52c6b40d45264838c0bd96852662ce6a847b197376830160c6d2eb5e6a4c44d33f453eac"),
 			compressed:    hexToBytes("04192d74d0cb94344c9569c2e77901573d8d7903c3ebec3a957724895dca52c6b4"),
 		},
-		{
-			name:          "pay-to-pubkey uncompressed 0x04 odd",
-			version:       1,
-			scriptVersion: 0,
-			uncompressed:  hexToBytes("410411db93e1dcdb8a016b49840f8c53bc1eb68a382e97b1482ecad7b148a6909a5cb2e0eaddfb84ccf9744464f82e160bfa9b8b64f9d4c03f999b8643f656b412a3ac"),
-			compressed:    hexToBytes("0511db93e1dcdb8a016b49840f8c53bc1eb68a382e97b1482ecad7b148a6909a5c"),
-		},
+		
 		{
 			name:          "pay-to-pubkey invalid pubkey",
 			version:       1,
